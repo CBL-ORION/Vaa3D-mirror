@@ -400,6 +400,8 @@ unix:!macx {
 #added 20140324 to cope with centos 64bit GL library issue. by HP
 #unix:LIBS += -L/usr/lib64 -lGL
 
+unix:LIBS += -lGL -lGLU
+
 macx:LIBS += -L../common_lib/lib_mac32
 macx:LIBS += -lm -lv3dtiff -lv3dnewmat
 #    -framework GLUT
